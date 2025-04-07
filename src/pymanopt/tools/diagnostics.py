@@ -158,7 +158,7 @@ def check_gradient(problem, x=None, d=None):
     plt.loglog(
         h[segment], 10 ** np.polyval(poly, np.log10(h[segment])), linewidth=3
     )
-    plt.plot([1e-8, 1e0], [1e-8, 1e8], linestyle="--", color="k")
+    plt.plot([1e-8, 1e0], [1e-8, 1e0], linestyle="--", color="k")
     plt.title(
         "Gradient check\nThe slope of the continuous line should match that "
         "of the dashed\n(reference) line over at least a few orders of "
